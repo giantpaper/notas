@@ -1,0 +1,21 @@
+version=pmwiki-2.2.134 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:84.0) Gecko/20100101 Firefox/84.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1608143795
+host=127.0.0.1
+name=Grammar.Gramática
+rev=4
+targets=
+text=(:pagelist group=Grammar:)
+time=1608179472
+author:1608176685=the_author
+diff:1608176685:1608176532:=0a1,2%0a> * [[Grammar/Verbos]]%0a> %0a
+host:1608176685=127.0.0.1
+author:1608176532=the_author
+diff:1608176532:1608143795:=1,3c1%0a%3c * [[Grammar/Verbos]]%0a%3c %0a%3c (:pagelist group=Grammar:)%0a\ No newline at end of file%0a---%0a> * [[Grammar/Verbos]]%0a\ No newline at end of file%0a
+host:1608176532=127.0.0.1
+author:1608143795=the_author
+diff:1608143795:1608143795:=1d0%0a%3c * [[Grammar/Verbos]]%0a\ No newline at end of file%0a
+host:1608143795=127.0.0.1

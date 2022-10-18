@@ -1,0 +1,22 @@
+version=pmwiki-2.2.134 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:84.0) Gecko/20100101 Firefox/84.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1608231969
+host=127.0.0.1
+name=Vocabulario.Calendario
+rev=3
+targets=
+text=(:title El Calendario:)%0a%0a!! Los meses%0a%0a||! en español	||! en inglés %0a|| enero		|| January %0a|| febrero	|| February %0a|| marzo		|| March %0a|| abril		|| April %0a|| mayo		|| May %0a|| junio		|| June %0a|| julio		|| July %0a|| agosto		|| August %0a|| septiembre	|| September %0a|| octubre	|| October %0a|| noviembre	|| November %0a|| diciembre	|| December %0a%0a!! Los días de la semana%0a%0a||! en español	||! en inglés %0a|| domingo	|| Sunday %0a|| lunes		|| Monday %0a|| martes	|| Tuesday  %0a|| miercoles	|| Wednesday %0a|| jueves		|| Thursday %0a|| viernes	|| Friday %0a|| sábado	|| Saturday %0a
+time=1608232030
+title=El Calendario
+author:1608232030=the_author
+diff:1608232030:1608232001:=28c28%0a%3c || sábado	|| Saturday %0a---%0a> || sábado	|| Saturday%0a\ No newline at end of file%0a
+host:1608232030=127.0.0.1
+author:1608232001=the_author
+diff:1608232001:1608231969:=6c6%0a%3c || enero		|| January %0a---%0a> || enero		|| January%0a9c9%0a%3c || abril		|| April %0a---%0a> || abril		|| April%0a22c22%0a%3c || domingo	|| Sunday %0a---%0a> || domingo	|| Sunday%0a28c28%0a%3c || sábado	|| Saturday %0a\ No newline at end of file%0a---%0a> || sábado	|| Saturday%0a\ No newline at end of file%0a
+host:1608232001=127.0.0.1
+author:1608231969=the_author
+diff:1608231969:1608231969:=1,28d0%0a%3c (:title El Calendario:)%0a%3c %0a%3c !! Los meses%0a%3c %0a%3c ||! en español	||! en inglés %0a%3c || enero		|| January%0a%3c || febrero	|| February %0a%3c || marzo		|| March %0a%3c || abril		|| April%0a%3c || mayo		|| May %0a%3c || junio		|| June %0a%3c || julio		|| July %0a%3c || agosto		|| August %0a%3c || septiembre	|| September %0a%3c || octubre	|| October %0a%3c || noviembre	|| November %0a%3c || diciembre	|| December %0a%3c %0a%3c !! Los días de la semana%0a%3c %0a%3c ||! en español	||! en inglés %0a%3c || domingo	|| Sunday%0a%3c || lunes		|| Monday %0a%3c || martes	|| Tuesday  %0a%3c || miercoles	|| Wednesday %0a%3c || jueves		|| Thursday %0a%3c || viernes	|| Friday %0a%3c || sábado	|| Saturday %0a\ No newline at end of file%0a
+host:1608231969=127.0.0.1

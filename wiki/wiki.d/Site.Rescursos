@@ -1,0 +1,16 @@
+version=pmwiki-2.3.4 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1657752698
+host=127.0.0.1
+name=Site.Rescursos
+rev=1
+targets=
+text=(:title Rescursos:)%0a%0a* [[https://duolingo.com | Duolingo]]%0a* [[https://www.lupa.app/ | Lupa.app]] - great for folks with auditory processing issues
+time=1657752698
+title=Rescursos
+author:1657752698=the_author
+diff:1657752698:1657752698:=1,4d0%0a%3c (:title Rescursos:)%0a%3c %0a%3c * [[https://duolingo.com | Duolingo]]%0a%3c * [[https://www.lupa.app/ | Lupa.app]] - great for folks with auditory processing issues%0a\ No newline at end of file%0a
+host:1657752698=127.0.0.1

@@ -1,0 +1,636 @@
+$pink: mix(red, pink);
+$primary: $pink;
+$secondary: mix(black, purple);
+
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 375px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1280px,
+	x2: 1440px,
+	x3: 1690px,
+	x4: 1920px,
+	x5: 2560px,
+);
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@function text($px) {
+	@return #{calc($px/16)}rem;
+}
+
+.btn {
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	&-primary {
+		background: $primary;
+		color: white;
+	}
+	&-secondary {
+		background: $secondary;
+		color: white;
+	}
+}
+
+* {
+	outline: none;
+}
+
+.prose {
+	@apply mx-auto text-sm;
+}
+.hr {
+	@apply my-4;
+	border-top: 1px currentcolor solid;
+	opacity: 0.25;
+}
+%paragraph {
+	margin-bottom: 1rem;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+%default-text {
+	font: #{calc(16/16)}rem 'nunito-sans',sans-serif;
+}
+
+%typewriter {
+	font-family: 'ibm-plex-mono',sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+%li {
+	@extend %paragraph;
+	display: block;
+}
+%list {
+	@extend %paragraph;
+	padding: 0 0 0 1rem;
+	li {
+		@extend %li;
+		padding: 0.25rem 1rem 0.25rem 0;
+		margin-bottom: 2px;
+		&:before {
+			color: $pink;
+			float: left;
+			display: block;
+			margin: 0.6rem 0.5rem 0.6rem -1rem;
+		}
+	}
+}
+
+%ul {
+	@extend %list;
+	list-style: none;
+	padding-left: 1rem;
+	> li {
+		&:before {
+			background: currentcolor;
+			content: '';
+			width: 0.5rem;
+			height: 3px;
+		}
+	}
+}
+%ol {
+	@extend %list;
+	counter-reset: olINC;
+	> li {
+		&:before {
+			@extend %typewriter;
+			counter-increment: olINC;
+			content: counter(olINC) '.';
+			line-height: 0.85em;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+%htag {
+	@extend %paragraph;
+	@extend %typewriter;
+	margin: 2rem 0 1rem;
+	&:last-child {
+		margin-top: 0;
+	}
+}
+
+%h1 {
+	@extend %htag;
+	font-size: 1em;
+	margin: 0;
+	line-height: inherit;
+	/*
+	clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%);*/
+}
+%h2 {
+	@extend %htag;
+	font-size: 1em;
+	&:before {
+		content: '#';
+		margin-left: -1.25rem;
+		display: inline-block;
+		width: 1rem;
+		color: $pink;
+		text-align: right;
+		padding-right: 1em;
+	}
+}
+%h3 {
+	@extend %default-text;
+	font-weight: bold;
+}
+%h4 {
+	@extend %htag;
+}
+%h5 {
+	@extend %htag;
+}
+
+%form {
+	display: grid;
+	grid-gap: 1rem;
+	label {
+		margin: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@for $i from 1 through 5 {
+	h#{$i},
+	.h#{$i} {
+		@extend %h#{$i};
+	}
+}
+
+html {
+	height: 100%;
+}
+body {
+	@extend %default-text;
+	background: white;
+	height: 100%;
+	@media (min-width: 768px) {
+		font-size: text(18);
+	}
+}
+
+.form {
+	&-label {
+		margin-left: 0.25rem;
+	}
+	&-control {
+		border: 1px currentcolor solid;
+	}
+}
+
+
+form {
+	@extend %form;
+	input {
+		min-width: 1px;
+		flex: 0 0 auto;
+		&[type="password"] {
+			@extend .form-control;
+		//	width: 10rem;
+		}
+		&[type="submit"] {
+			@extend .btn;
+			@extend .btn-primary;
+			cursor: pointer;
+		}
+		&[type='search'] {
+		//	flex: 0 0 100%;
+		//	width: auto;
+		}
+		&[type='submit'] {
+		//	width: 4rem;
+		}
+	}
+	&[name="authform"] {
+		margin-top: 1rem;
+		p {
+			@extend %form;
+			@apply grid-cols-[auto_auto_5rem];
+		}
+	}
+}
+nav {
+	display: flex;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li,
+	a {
+		color: inherit;
+		margin: 0 0.5rem;
+		&:first-of-type {
+			margin-left: 0;
+		}
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+	a {
+		&.createlink {
+			color: white;
+			background: black;
+			position: static;
+			display: inline-flex;
+			width: 1.25em;
+			height: 1.25em;
+			border-radius: 100em;
+			align-items: center;
+			justify-content: center;
+			&text {
+				margin: 0;
+			}
+		}
+	}
+}
+#wikihead {
+	font-size: #{calc(14/16)}rem;
+	margin: 1rem -#{calc($grid-gutter-width / 2)} 0.5rem;
+}
+#wikilogo {
+	border-bottom: 1px transparentize(black, 0.75) solid;
+	height: 75%;
+	//padding: 0 $grid-gutter-width;
+	position: relative;
+	a {
+		display: block;
+		margin-bottom: 5px;
+		&:hover {
+			box-shadow: none !important;
+		}
+	}
+	&:after {
+		background: transparentize(black, 0.75);
+		height: 1px;
+		width: 100%;
+		//width: calc(100% + (#{$grid-gutter-width} * 2));
+		content: '';
+		display: block;
+		margin: 0 0 -4px;
+	}
+}
+#wikicmds {
+	justify-content: flex-end;
+	margin-bottom: 2rem;
+}
+#wikititle {
+	background: black;
+	color: white;
+	display: inline-flex;
+	margin: 0 0 1rem -#{calc($grid-gutter-width / 2)};
+	font-size: text(14);
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	//background: transparentize(black, 0.75);
+	.pagegroup {
+		@extend %typewriter;
+		font-size: 1em;
+		display: flex;
+		align-items: center;
+		i {
+			//@extend .sr-only;
+			padding: 0 0.5rem;
+		}
+		a {
+			color: inherit;
+			display: block;
+		}
+	}
+}
+#wikimid {
+	min-height: 100%;
+	@media (min-width: 768px) {
+		display: grid;
+		grid-template-columns: auto 30vw;
+	}
+	@media (min-width: 1024px) {
+		grid-template-columns: auto 25vw;
+	}
+	@media (min-width: 1920px) {
+		grid-template-columns: auto 350px;
+	}
+	#body {
+		padding: 0 5vw 2rem;
+		line-height: 125%;
+		.container {
+			@media (max-width: 413px) {
+				padding: 0;
+			}
+		}
+		@media (min-width: 768px) {
+			padding: 0 10vw 4rem;
+		}
+	}
+	#sidebar {
+		padding: 2rem 5vw;
+		font-size: text(14);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		@media (min-width: 768px) {
+			padding: 2rem 10vw 4rem;
+		}
+		& > * {
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			background: url("background.jpg") no-repeat 100% 0;
+			position: absolute;
+			content: '';
+			display: block;
+			z-index: 0;
+			width: 100%;
+			height: calc(553px - 8em);
+			right: 0;
+			bottom: 0;
+		}
+		&:after {
+			position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			background: #e5e8ea;
+			content: '';
+			display: block;
+			z-index: 1;
+			mix-blend-mode: multiply;
+		}
+		@media (min-width: 768px) {
+			padding: 1rem;
+		}
+		.sidehead {
+			@extend .h5;
+			margin-bottom: 1rem;
+		}
+		form {
+			margin-bottom: 1rem;
+			grid-template-columns: auto auto 4rem;
+			@media (min-width: 768px) and (max-width: 1023px) {
+				grid-template-columns: auto 4rem;
+				grid-template-rows: auto auto;
+			}
+			label {
+				@apply mr-0;
+				@media (min-width: 768px) and (max-width: 1023px) {
+					grid-column: span 2;
+					width: 100%;
+				}
+			}
+			.form-control.searchfield {
+				@apply mr-0;
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			@media (min-width: 413px) and (max-width: 767px) {
+				column-count: 2;
+				column-gap: 1rem;
+			}
+			li {
+				margin: 0 0 0.5rem 0;
+			}
+		}
+	}
+}
+
+#wikicmds {
+	font-size: text(14);
+	margin-bottom: 1rem;
+	ul {
+		display: flex;
+	}
+}
+
+#wikitext {
+	p,.p.vspace {
+		@extend %paragraph;
+	}
+	p:not(.vspace):first-of-type {
+		margin: 0;
+	}
+	a {
+		background: linear-gradient(to bottom, transparent 75%, $pink 75% 95%, transparent 95%);
+		transition: background 0.4s;
+		&:hover {
+			background: linear-gradient(to bottom, $pink 0% 95%, transparent 95%);
+			text-decoration: none;
+		}
+	}
+	.mininav {
+		background: none !important;
+		margin-bottom: 2rem;
+		a {
+			background: inherit;
+		}
+	}
+	table {
+		background: transparentize(black, 0.875);
+		border: 1px white solid;
+		outline: 3px transparentize(black, 0.95) solid;
+		margin-top: 1rem;
+		caption {
+			@extend %typewriter;
+			text-align: center;
+			color: black;
+			display: table-caption;
+			background: white;
+		}
+	}
+	td,th {
+		padding: 0.5rem !important;
+		border-top: 1px white solid;
+		border-right: 1px white solid;
+		&[align="center"] {
+			text-align: center;
+		}
+		&[align="right"] {
+			text-align: right;
+		}
+	}
+	th {
+		em {
+			font-weight: normal;
+		}
+	}
+	tr {
+		&:first-child {
+			th {
+				background: white;
+				border-bottom: 5px black solid;
+			}
+		}
+		td {
+			&:not(:last-child) {
+				border-right: 1px #666 solid;
+			}
+		}
+		&:nth-child(2n-1) {
+			td {
+				background: white;
+			}
+		}
+	}
+	
+	ul {
+		@extend %ul;
+	}
+	ol {
+		@extend %ol;
+	}
+	
+	blockquote {
+		border-left: 3px black solid;
+		padding: 1rem;
+		margin-left: 1%;
+		margin-right: 1%;
+		cite {
+			display: block;
+			font-size: text(14);
+			font-style: italic;
+			&:before {
+				display: inline;
+				content: '- ';
+			}
+		}
+	}
+}
+body:not(.edit) {
+	#wikicontent {
+		@apply max-w-prose mx-auto;
+	}
+}
+
+#wikiedit {
+	form {
+		@extend .form;
+		@apply grid items-center;
+		@apply grid-cols-3;
+		label {
+			&.minor_edit {
+				@apply items-center flex gap-1;
+			}
+		}
+		input[type='text'],
+		textarea {
+			@extend .form-control;
+		}
+		textarea {
+			@apply col-span-3;
+			@apply p-2;
+		}
+		input {
+			@apply p-1;
+			&[type="text"] {
+				@apply col-span-2;
+			}
+			&[type='submit'] {
+				@extend .btn;
+				@extend .btn-secondary;
+				&[value=" Save "] {
+					@extend .btn-primary;
+				}
+				&[name="post"] {
+					@apply col-span-3;
+				}
+			}
+		}
+		br {
+			display: none;
+		}
+	}
+	&:after {
+		@extend %h2;
+		display: block;
+		content: 'Quick Reference Guide';
+		margin: 2rem 0 0;
+	}
+}
+
+table.quickref {
+	margin: 1rem 0 2rem;
+	td {
+		padding: 0.5rem;
+	}
+	tr:nth-child(2n) {
+		td {
+			background: transparentize(black, 0.95);
+		}
+	}
+}
+
+#wikifoot {
+	//text-align: right;
+	font-size: #{calc(14/16)}rem;
+	padding-top: 250px;
+	//padding: 0 2rem;
+	text-align: right;
+	nav {
+		//justify-content: flex-end;
+		padding-bottom: 1rem;
+		display: block;
+		a {
+			margin: 0 0.125rem;
+		}
+	}
+	#tulink {
+		margin-top: 2rem;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			svg {
+				width: 2rem;
+				height: auto;
+				margin: 0 1rem;
+			}
+		}
+	}
+}
+
+.wikisearch {
+	dl {
+		.wikilink {
+			background: #efefef;
+			padding: 1rem;
+			border-radius: 0.25rem;
+			text-decoration: none;
+			display: block;
+			width: calc(50% - 1rem);
+			margin: 0.5rem;
+		}
+	}
+}
+.fpltemplate {
+	dl {
+		@extend %list;
+		dt {
+			display: none;
+		}
+		dd {
+			@extend %li;
+			&:first-of-type {
+				display: none;
+			}
+		}
+	}
+}

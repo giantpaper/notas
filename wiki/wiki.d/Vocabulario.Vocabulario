@@ -1,0 +1,30 @@
+version=pmwiki-2.3.4 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:103.0) Gecko/20100101 Firefox/103.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1608176708
+host=127.0.0.1
+name=Vocabulario.Vocabulario
+rev=6
+targets=
+text=(:pagelist group=Vocabulario list=normal:)%0a%0a!! ¿Masculino o femenino?%0a%0aNouns ending in:%0a- ''-a''*, ''-ción'', ''-ía'' or ''-dad'' are usually feminine%0a- ''-o'', accented vowels (''-á'', ''-í'', etc) are usually masculine%0a%0aNames of rivers, lakes and oceans are usually masculine. Mountain names are usually feminine.%0a%0a!!! ¡*Excepión!%0a%0aWords ending in -ma and -pa are usually masculine.%0a%0aMore info: [[https://www.thoughtco.com/noun-masculine-or-feminine-spanish-3079270]]
+time=1659316489
+author:1659316489=the_author
+diff:1659316489:1658003650:=13c13%0a%3c Words ending in -ma and -pa are usually masculine.%0a---%0a> Words ending in -ma are usually masculine.%0a
+host:1659316489=127.0.0.1
+author:1658003650=the_author
+diff:1658003650:1658003628:=3c3%0a%3c !! ¿Masculino o femenino?%0a---%0a> !! ¿Masculino o feminino?%0a
+host:1658003650=127.0.0.1
+author:1658003628=the_author
+diff:1658003628:1658003541:=3c3%0a%3c !! ¿Masculino o feminino?%0a---%0a> !! ¿Masculino ó feminino?%0a
+host:1658003628=127.0.0.1
+author:1658003541=the_author
+diff:1658003541:1608236076:=1,15c1%0a%3c (:pagelist group=Vocabulario list=normal:)%0a%3c %0a%3c !! ¿Masculino ó feminino?%0a%3c %0a%3c Nouns ending in:%0a%3c - ''-a''*, ''-ción'', ''-ía'' or ''-dad'' are usually feminine%0a%3c - ''-o'', accented vowels (''-á'', ''-í'', etc) are usually masculine%0a%3c %0a%3c Names of rivers, lakes and oceans are usually masculine. Mountain names are usually feminine.%0a%3c %0a%3c !!! ¡*Excepión!%0a%3c %0a%3c Words ending in -ma are usually masculine.%0a%3c %0a%3c More info: [[https://www.thoughtco.com/noun-masculine-or-feminine-spanish-3079270]]%0a\ No newline at end of file%0a---%0a> (:pagelist group=Vocabulario list=normal:)%0a\ No newline at end of file%0a
+host:1658003541=127.0.0.1
+author:1608236076=the_author
+diff:1608236076:1608176708:=1c1%0a%3c (:pagelist group=Vocabulario list=normal:)%0a\ No newline at end of file%0a---%0a> (:pagelist group=Vocabulario:)%0a\ No newline at end of file%0a
+host:1608236076=127.0.0.1
+author:1608176708=the_author
+diff:1608176708:1608176708:=1d0%0a%3c (:pagelist group=Vocabulario:)%0a\ No newline at end of file%0a
+host:1608176708=127.0.0.1

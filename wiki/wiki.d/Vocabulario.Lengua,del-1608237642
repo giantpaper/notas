@@ -1,0 +1,15 @@
+version=pmwiki-2.2.134 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:84.0) Gecko/20100101 Firefox/84.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1608178202
+host=127.0.0.1
+name=Vocabulario.Lengua
+rev=2
+targets=
+text=(:redirect [[Vocabulario.Lenguas]]:)
+time=1608230828
+author:1608178202=the_author
+diff:1608178202:1608178202:=1,5d0%0a%3c ||!En español ||!En inglés %0a%3c ||español ||Spanish%0a%3c ||inglés ||English%0a%3c ||alemán ||German%0a%3c ||portugués ||Portguese%0a\ No newline at end of file%0a
+host:1608178202=127.0.0.1

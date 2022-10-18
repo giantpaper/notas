@@ -1,0 +1,21 @@
+version=pmwiki-2.2.134 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:84.0) Gecko/20100101 Firefox/84.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1608178771
+host=127.0.0.1
+name=Grammar.PoryPara
+rev=4
+targets=
+text=(:redirect [[Gramática.PoryPara]]:)
+time=1608179995
+author:1608179978=the_author
+diff:1608179978:1608178808:=1c1%0a%3c !! 1. Use "para" for...%0a---%0a> !! 1. Use "para" for:%0a
+host:1608179978=127.0.0.1
+author:1608178808=the_author
+diff:1608178808:1608178771:=3c3%0a%3c ''Necesito ese libro para el lunes.''\\%0a---%0a> ''Necesito ese libro para el lunes.''%0a8,9c8,9%0a%3c * '''Purpose/intent'''\\%0a%3c ''El libro es para leer.''\\%0a---%0a> * '''Purpose/intent'''%0a> ''El libro es para leer.''%0a11,12c11,12%0a%3c * '''Recepient'''\\%0a%3c ''El regalo es para él.''\\%0a---%0a> * '''Recepient'''%0a> ''El regalo es para él.''%0a
+host:1608178808=127.0.0.1
+author:1608178771=the_author
+diff:1608178771:1608178771:=1,17d0%0a%3c !! 1. Use "para" for:%0a%3c * '''Deadline'''\\%0a%3c ''Necesito ese libro para el lunes.''%0a%3c I need that book by Monday.%0a%3c * '''Destination'''\\%0a%3c ''Sale para la ciudad ayer.''\\%0a%3c He left for the city yesterday.%0a%3c * '''Purpose/intent'''%0a%3c ''El libro es para leer.''%0a%3c The book is for reading.%0a%3c * '''Recepient'''%0a%3c ''El regalo es para él.''%0a%3c The gift is for him.%0a%3c * '''Showing the opposite of what's normally expected.'''%0a%3c * '''Use [estar] para for an action that will be completed.'''%0a%3c %0a%3c More info: http://studyspanish.com/grammar/lessons/porpara%0a
+host:1608178771=127.0.0.1

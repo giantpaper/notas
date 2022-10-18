@@ -1,0 +1,27 @@
+version=pmwiki-2.2.134 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:84.0) Gecko/20100101 Firefox/84.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1608178202
+host=127.0.0.1
+name=Vocabulario.Lenguas
+rev=6
+targets=
+text=||! En español ||! En inglés %0a|| español       || Spanish %0a|| inglés          || English %0a|| alemán        || German [[https://www.spanishdict.com/translate/alem%25C3%25A1n | #]] %0a|| portugués   || Portguese %0a|| japonés        || Japanese %0a|| chino            || Chinese [[https://www.spanishdict.com/translate/chinese | #]] %0a|| coreano       || Korean [[https://www.spanishdict.com/translate/coreano | #]] %0a
+time=1608235960
+author:1608235960=the_author
+diff:1608235960:1608235949:=8c8%0a%3c || coreano       || Korean [[https://www.spanishdict.com/translate/coreano | #]] %0a---%0a> || coreano       || Korean [[https://www.spanishdict.com/translate/coreano | #]]%0a\ No newline at end of file%0a
+host:1608235960=127.0.0.1
+author:1608235949=the_author
+diff:1608235949:1608235934:=1c1%0a%3c ||! En español ||! En inglés %0a---%0a> || !En español || !En inglés %0a
+host:1608235949=127.0.0.1
+author:1608235934=the_author
+diff:1608235934:1608235906:=1c1%0a%3c || !En español || !En inglés %0a---%0a> ||!En español  ||!En inglés %0a8c8%0a%3c || coreano       || Korean [[https://www.spanishdict.com/translate/coreano | #]] %0a\ No newline at end of file%0a---%0a> || coreano       || Korean [[https://www.spanishdict.com/translate/coreano | #]]%0a\ No newline at end of file%0a
+host:1608235934=127.0.0.1
+author:1608235906=the_author
+diff:1608235906:1608230828:=1,8c1,5%0a%3c ||!En español  ||!En inglés %0a%3c || español       || Spanish %0a%3c || inglés          || English %0a%3c || alemán        || German [[https://www.spanishdict.com/translate/alem%25C3%25A1n | #]] %0a%3c || portugués   || Portguese %0a%3c || japonés        || Japanese %0a%3c || chino            || Chinese [[https://www.spanishdict.com/translate/chinese | #]] %0a%3c || coreano       || Korean [[https://www.spanishdict.com/translate/coreano | #]] %0a\ No newline at end of file%0a---%0a> ||!En español ||!En inglés %0a> ||español ||Spanish%0a> ||inglés ||English%0a> ||alemán ||German%0a> ||portugués ||Portguese%0a\ No newline at end of file%0a
+host:1608235906=127.0.0.1
+author:1608178202=the_author
+diff:1608178202:1608178202:=1,5d0%0a%3c ||!En español ||!En inglés %0a%3c ||español ||Spanish%0a%3c ||inglés ||English%0a%3c ||alemán ||German%0a%3c ||portugués ||Portguese%0a\ No newline at end of file%0a
+host:1608178202=127.0.0.1

@@ -1,0 +1,20 @@
+ # Use mod_rewrite to enable "Clean URLs" for a PmWiki installation.
+RewriteEngine On
+# Send requests without parameters to pmwiki.php.
+RewriteRule ^$           pmwiki.php  [L]
+# Send requests for index.php to pmwiki.php.
+RewriteRule ^index\.php$ pmwiki.php  [L]
+# Send requests to pmwiki.php, appending the query string part.
+RewriteRule ^([A-Z0-9\xa0-\xff].*)$ pmwiki.php?n=$1  [QSA,L]
+
+RewriteEngine On
+RewriteRule ^favicon\.ico favicon.svg [L,E=cache-control:max-age=86400]
+
+
+# AuthType Basic
+# AuthName "Access to the staging site"
+# AuthUserFile ../.htpasswd
+# Require valid-user
+
+# for staging
+# tS9pLPJrTfD-

@@ -1,0 +1,27 @@
+version=pmwiki-2.3.4 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0
+author=the_author
+charset=UTF-8
+csum=
+host=127.0.0.1
+name=Main.HomePage
+rev=208
+targets=
+text=(:title El hogar:)%0a%0aBienvenido, estas eres mis notas.%0a%0aYo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.
+time=1657757216
+title=El hogar
+author:1657757216=the_author
+diff:1657757216:1608255466:=5c5,7%0a%3c Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a\ No newline at end of file%0a---%0a> Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a> %0a> - [[~the_author]]%0a\ No newline at end of file%0a
+host:1657757216=127.0.0.1
+author:1608255466=the_author
+diff:1608255466:1608248583:=5,7c5%0a%3c Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a%3c %0a%3c - [[~the_author]]%0a\ No newline at end of file%0a---%0a> Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a\ No newline at end of file%0a
+host:1608255466=127.0.0.1
+author:1608248583=the_author
+diff:1608248583:1608239237:=3,5c3%0a%3c Bienvenido, estas eres mis notas.%0a%3c %0a%3c Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a\ No newline at end of file%0a---%0a> Bienvenido, estas eres mis notas.%0a\ No newline at end of file%0a
+host:1608248583=127.0.0.1
+author:1608239237=the_author
+diff:1608239237:1608179029:=3c3,15%0a%3c Bienvenido, estas eres mis notas.%0a\ No newline at end of file%0a---%0a> (:Summary:The default home page for the PmWiki distribution:)%0a> Welcome to PmWiki!%0a> %0a> A local copy of PmWiki's%0a> documentation has been installed along with the software,%0a> and is available via the [[PmWiki/documentation index]].  %0a> %0a> To continue setting up PmWiki, see [[PmWiki/initial setup tasks]].%0a> %0a> The [[PmWiki/basic editing]] page describes how to create pages%0a> in PmWiki.  You can practice editing in the [[wiki sandbox]].%0a> %0a> More information about PmWiki is available from [[http://www.pmwiki.org]].%0a
+host:1608239237=127.0.0.1
+author:1608179029=the_author
+diff:1608179029:1400472661:=1,2d0%0a%3c (:title El hogar:)%0a%3c %0a
+host:1608179029=127.0.0.1

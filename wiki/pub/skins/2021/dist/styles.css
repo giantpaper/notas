@@ -1,0 +1,559 @@
+/*
+! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+  tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::-webkit-backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}.table {
+  display: table;
+}.btn,#wikiedit form input[type=submit],form input[type=submit]{border:none;padding:.5rem 1rem;border-radius:.25rem}.btn-primary,#wikiedit form input[type=submit][value=" Save "],form input[type=submit]{background:#ff6066;color:#fff}.btn-secondary,#wikiedit form input[type=submit]{background:#400040;color:#fff}*{outline:none}.prose {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}.hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;border-top:1px currentcolor solid;opacity:.25;
+}#wikitext p,#wikitext .p.vspace,h5,.h5,#wikimid #sidebar .sidehead,h4,.h4,#wikiedit:after,h2,.h2,h1,.h1,.fpltemplate dl,#wikitext ol,#wikitext ul,.fpltemplate dl dd,.fpltemplate dl li,#wikitext ol li,#wikitext ul li{margin-bottom:1rem}#wikitext p:last-child,#wikitext .p.vspace:last-child,h5:last-child,.h5:last-child,#wikimid #sidebar .sidehead:last-child,h4:last-child,.h4:last-child,#wikiedit:last-child:after,h2:last-child,.h2:last-child,h1:last-child,.h1:last-child,.fpltemplate dl:last-child,#wikitext ol:last-child,#wikitext ul:last-child,.fpltemplate dl dd:last-child,.fpltemplate dl li:last-child,#wikitext ol li:last-child,#wikitext ul li:last-child{margin-bottom:0}body,h3,.h3{font:1rem "nunito-sans",sans-serif}#wikitext table caption,#wikititle .pagegroup,h5,.h5,#wikimid #sidebar .sidehead,h4,.h4,#wikiedit:after,h2,.h2,h1,.h1,#wikitext ol>li:before{font-family:"ibm-plex-mono",sans-serif;font-weight:400;font-style:normal}.fpltemplate dl dd,.fpltemplate dl li,#wikitext ol li,#wikitext ul li{display:block}.fpltemplate dl,#wikitext ol,#wikitext ul{padding:0 0 0 1rem}.fpltemplate dl li,#wikitext ol li,#wikitext ul li{padding:.25rem 1rem .25rem 0;margin-bottom:2px}.fpltemplate dl li:before,#wikitext ol li:before,#wikitext ul li:before{color:#ff6066;float:left;display:block;margin:.6rem .5rem .6rem -1rem}#wikitext ul{list-style:none;padding-left:1rem}#wikitext ul>li:before{background:currentcolor;content:"";width:.5rem;height:3px}#wikitext ol{counter-reset:olINC}#wikitext ol>li:before{counter-increment:olINC;content:counter(olINC) ".";line-height:.85em;margin-top:0;margin-bottom:0}h5,.h5,#wikimid #sidebar .sidehead,h4,.h4,#wikiedit:after,h2,.h2,h1,.h1{margin:2rem 0 1rem}h5:last-child,.h5:last-child,#wikimid #sidebar .sidehead:last-child,h4:last-child,.h4:last-child,#wikiedit:last-child:after,h2:last-child,.h2:last-child,h1:last-child,.h1:last-child{margin-top:0}h1,.h1{font-size:1em;margin:0;line-height:inherit}#wikiedit:after,h2,.h2{font-size:1em}h2:before,.h2:before{content:"#";margin-left:-1.25rem;display:inline-block;width:1rem;color:#ff6066;text-align:right;padding-right:1em}h3,.h3{font-weight:bold}form[name=authform] p,form{display:grid;grid-gap:1rem}form[name=authform] p label,form label{margin:0;height:100%;display:flex;align-items:center}html{height:100%}body{background:#fff;height:100%}@media(min-width: 768px){body{font-size:1.125rem}}.form-label{margin-left:.25rem}.form-control,#wikiedit form input[type=text],#wikiedit form textarea,form input[type=password]{border:1px currentcolor solid}form input{min-width:1px;flex:0 0 auto}form input[type=submit]{cursor:pointer}form[name=authform]{margin-top:1rem}form[name=authform] p {
+  grid-template-columns: auto auto 5rem;
+}nav{display:flex}nav ul{list-style:none;padding:0;margin:0}nav li,nav a{color:inherit;margin:0 .5rem}nav li:first-of-type,nav a:first-of-type{margin-left:0}nav li:last-of-type,nav a:last-of-type{margin-right:0}nav a.createlink{color:#fff;background:#000;position:static;display:inline-flex;width:1.25em;height:1.25em;border-radius:100em;align-items:center;justify-content:center}nav a.createlinktext{margin:0}#wikihead{font-size:0.875rem;margin:1rem -15px .5rem}#wikilogo{border-bottom:1px rgba(0,0,0,.25) solid;height:75%;position:relative}#wikilogo a{display:block;margin-bottom:5px}#wikilogo a:hover{box-shadow:none !important}#wikilogo:after{background:rgba(0,0,0,.25);height:1px;width:100%;content:"";display:block;margin:0 0 -4px}#wikicmds{justify-content:flex-end;margin-bottom:2rem}#wikititle{background:#000;color:#fff;display:inline-flex;margin:0 0 1rem -15px;font-size:0.875rem;padding:.5rem 1rem;text-transform:uppercase}#wikititle .pagegroup{font-size:1em;display:flex;align-items:center}#wikititle .pagegroup i{padding:0 .5rem}#wikititle .pagegroup a{color:inherit;display:block}#wikimid{min-height:100%}@media(min-width: 768px){#wikimid{display:grid;grid-template-columns:auto 30vw}}@media(min-width: 1024px){#wikimid{grid-template-columns:auto 25vw}}@media(min-width: 1920px){#wikimid{grid-template-columns:auto 350px}}#wikimid #body{padding:0 5vw 2rem;line-height:125%}@media(max-width: 413px){#wikimid #body .container{padding:0}}@media(min-width: 768px){#wikimid #body{padding:0 10vw 4rem}}#wikimid #sidebar{padding:2rem 5vw;font-size:0.875rem;display:flex;flex-direction:column;justify-content:space-between;position:relative}@media(min-width: 768px){#wikimid #sidebar{padding:2rem 10vw 4rem}}#wikimid #sidebar>*{position:relative;z-index:2}#wikimid #sidebar:before{background:url("background.jpg") no-repeat 100% 0;position:absolute;content:"";display:block;z-index:0;width:100%;height:calc(553px - 8em);right:0;bottom:0}#wikimid #sidebar:after{position:absolute;top:0;left:0;right:0;bottom:0;background:#e5e8ea;content:"";display:block;z-index:1;mix-blend-mode:multiply}@media(min-width: 768px){#wikimid #sidebar{padding:1rem}}#wikimid #sidebar .sidehead{margin-bottom:1rem}#wikimid #sidebar form{margin-bottom:1rem;grid-template-columns:auto auto 4rem}@media(min-width: 768px)and (max-width: 1023px){#wikimid #sidebar form{grid-template-columns:auto 4rem;grid-template-rows:auto auto}}#wikimid #sidebar form label {
+  margin-right: 0px;
+}@media(min-width: 768px)and (max-width: 1023px){#wikimid #sidebar form label{grid-column:span 2;width:100%}}#wikimid #sidebar form .form-control.searchfield, #wikimid #sidebar #wikiedit form input.searchfield[type=text], #wikiedit #wikimid #sidebar form input.searchfield[type=text], #wikimid #sidebar #wikiedit form textarea.searchfield, #wikiedit #wikimid #sidebar form textarea.searchfield, #wikimid #sidebar form input.searchfield[type=password] {
+  margin-right: 0px;
+}#wikimid #sidebar ul{margin:0;padding:0}@media(min-width: 413px)and (max-width: 767px){#wikimid #sidebar ul{-webkit-column-count:2;-moz-column-count:2;column-count:2;-webkit-column-gap:1rem;-moz-column-gap:1rem;column-gap:1rem}}#wikimid #sidebar ul li{margin:0 0 .5rem 0}#wikicmds{font-size:0.875rem;margin-bottom:1rem}#wikicmds ul{display:flex}#wikitext p:not(.vspace):first-of-type{margin:0}#wikitext a{background:linear-gradient(to bottom, transparent 75%, #ff6066 75% 95%, transparent 95%);transition:background .4s}#wikitext a:hover{background:linear-gradient(to bottom, #ff6066 0% 95%, transparent 95%);text-decoration:none}#wikitext .mininav{background:none !important;margin-bottom:2rem}#wikitext .mininav a{background:inherit}#wikitext table{background:rgba(0,0,0,.125);border:1px #fff solid;outline:3px rgba(0,0,0,.05) solid;margin-top:1rem}#wikitext table caption{text-align:center;color:#000;display:table-caption;background:#fff}#wikitext td,#wikitext th{padding:.5rem !important;border-top:1px #fff solid;border-right:1px #fff solid}#wikitext td[align=center],#wikitext th[align=center]{text-align:center}#wikitext td[align=right],#wikitext th[align=right]{text-align:right}#wikitext th em{font-weight:normal}#wikitext tr:first-child th{background:#fff;border-bottom:5px #000 solid}#wikitext tr td:not(:last-child){border-right:1px #666 solid}#wikitext tr:nth-child(2n-1) td{background:#fff}#wikitext blockquote{border-left:3px #000 solid;padding:1rem;margin-left:1%;margin-right:1%}#wikitext blockquote cite{display:block;font-size:0.875rem;font-style:italic}#wikitext blockquote cite:before{display:inline;content:"- "}body:not(.edit) #wikicontent {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 65ch;
+}#wikiedit form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}#wikiedit form label.minor_edit {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}#wikiedit form textarea {
+  grid-column: span 3 / span 3;
+  padding: 0.5rem;
+}#wikiedit form input {
+  padding: 0.25rem;
+}#wikiedit form input[type=text] {
+  grid-column: span 2 / span 2;
+}#wikiedit form input[type=submit][name=post] {
+  grid-column: span 3 / span 3;
+}#wikiedit form br{display:none}#wikiedit:after{display:block;content:"Quick Reference Guide";margin:2rem 0 0}table.quickref{margin:1rem 0 2rem}table.quickref td{padding:.5rem}table.quickref tr:nth-child(2n) td{background:rgba(0,0,0,.05)}#wikifoot{font-size:0.875rem;padding-top:250px;text-align:right}#wikifoot nav{padding-bottom:1rem;display:block}#wikifoot nav a{margin:0 .125rem}#wikifoot #tulink{margin-top:2rem}#wikifoot #tulink a{display:flex;align-items:center;justify-content:flex-end}#wikifoot #tulink a svg{width:2rem;height:auto;margin:0 1rem}.wikisearch dl .wikilink{background:#efefef;padding:1rem;border-radius:.25rem;text-decoration:none;display:block;width:calc(50% - 1rem);margin:.5rem}.fpltemplate dl dt{display:none}.fpltemplate dl dd:first-of-type{display:none}
+
+/*# sourceMappingURL=styles.css.map */

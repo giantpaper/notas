@@ -1,0 +1,5 @@
+.config
+error_log
+.nova
+_psds
+.htpasswd
