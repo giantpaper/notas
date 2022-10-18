@@ -1,5 +1,5 @@
 <?php if (!defined('PmWiki')) exit();
-$config = file('../.config');
+$config = file("$FarmD/.config");
 foreach ($config as $line) {
 	$line = trim($line);
 	if (preg_match("/^#/", $line) || $line == null)
