@@ -1,15 +1,18 @@
 version=pmwiki-2.3.4 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0
 author=the_author
 charset=UTF-8
 csum=
 host=127.0.0.1
 name=Main.HomePage
-rev=208
+rev=209
 targets=
-text=(:title El hogar:)%0a%0aBienvenido, estas eres mis notas.%0a%0aYo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.
-time=1657757216
+text=(:title El hogar:)%0a%0aBienvenido, estas eres mis notas.%0a%0aYo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a%0a!! ¿Por qué español?%0a%0aBecause I live in the USA, and I don't want to be monolingual. 😖 Being a native English speaker means Spanish would be a lot easier for me to learn than say Japanese.
+time=1666127005
 title=El hogar
+author:1666127005=the_author
+diff:1666127005:1657757216:=5,9c5%0a%3c Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a%3c %0a%3c !! ¿Por qué español?%0a%3c %0a%3c Because I live in the USA, and I don't want to be monolingual. 😖 Being a native English speaker means Spanish would be a lot easier for me to learn than say Japanese.%0a\ No newline at end of file%0a---%0a> Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a\ No newline at end of file%0a
+host:1666127005=127.0.0.1
 author:1657757216=the_author
 diff:1657757216:1608255466:=5c5,7%0a%3c Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a\ No newline at end of file%0a---%0a> Yo comencé a aprender español en Moorpark College y ahora estoy aprendiendo en Duolingo y Internet.%0a> %0a> - [[~the_author]]%0a\ No newline at end of file%0a
 host:1657757216=127.0.0.1

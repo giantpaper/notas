@@ -1,9 +1,9 @@
 version=pmwiki-2.3.4 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0
 charset=UTF-8
 ctime=1608179029
 host=127.0.0.1
 name=Main.RecentChanges
-rev=5
-text=* [[Main/HomePage]]  . . . @2022-07-14T00:06:56Z by [[~the_author]]: [==]%0a
-time=1657757216
+rev=6
+text=* [[Main/HomePage]]  . . . @2022-10-18T21:03:25Z by [[~the_author]]: [==]%0a
+time=1666127005
