@@ -216,6 +216,10 @@ form {
 		//	width: 4rem;
 		}
 	}
+	input,
+	textarea {
+		font: 0.8em "ibm-plex-mono",monospace;
+	}
 	&[name="authform"] {
 		margin-top: 1rem;
 		p {
