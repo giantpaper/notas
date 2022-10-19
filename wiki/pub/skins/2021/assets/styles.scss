@@ -395,8 +395,10 @@ nav {
 					width: 100%;
 				}
 			}
-			.form-control#searchfield {
-				@apply mr-0 px-2;
+			.form-control {
+				&#searchfield {
+					@apply mr-0 px-2;
+				}
 			}
 		}
 		ul {
