@@ -1,0 +1,5 @@
+---
+deployment:
+	tasks:
+		- export DEPLOYPATH=/home/giantpap/~notas.giantpaper.org/wiki
+		- /bin/cp -R wiki $DEPLOYPATH
