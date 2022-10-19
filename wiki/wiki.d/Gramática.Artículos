@@ -1,0 +1,16 @@
+version=pmwiki-2.3.4 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0
+author=the_author
+charset=UTF-8
+csum=
+ctime=1666138155
+host=127.0.0.1
+name=Gramática.Artículos
+rev=1
+targets=
+text=(:title Los Artículos:)%0a%0a!! Masculino%0a%0a||!                  ||! Singular ||! Plural ||%0a|| Indefinite || uno         || unos  ||%0a|| Definite   || el        || los ||%0a%0a!! Feminino%0a%0a||!                  ||! Singular ||! Plural ||%0a|| Indefinite || uno         || unos  ||%0a|| Definite   || el        || los ||
+time=1666138155
+title=Los Artículos
+author:1666138155=the_author
+diff:1666138155:1666138155:=1,13d0%0a%3c (:title Los Artículos:)%0a%3c %0a%3c !! Masculino%0a%3c %0a%3c ||!                  ||! Singular ||! Plural ||%0a%3c || Indefinite || uno         || unos  ||%0a%3c || Definite   || el        || los ||%0a%3c %0a%3c !! Feminino%0a%3c %0a%3c ||!                  ||! Singular ||! Plural ||%0a%3c || Indefinite || uno         || unos  ||%0a%3c || Definite   || el        || los ||%0a\ No newline at end of file%0a
+host:1666138155=127.0.0.1

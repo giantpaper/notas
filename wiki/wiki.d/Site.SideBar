@@ -1,15 +1,18 @@
 version=pmwiki-2.3.4 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0
 author=the_author
 charset=UTF-8
 csum=
 host=127.0.0.1
 name=Site.SideBar
 passwdedit=@_site_edit
-rev=19
-targets=Gramática.Gramática,Gramática.Verbos,Gramática.Oraciones,Gramática.PoryPara,Gramática.SeryEstar,Vocabulario.Vocabulario,Vocabulario.Lugares,Vocabulario.Lenguas,Vocabulario.Calendario,Vocabulario.Otros,Site.Rescursos,Site.SideBar
-text=%25sidehead%25 [[Gramática/Gramática | La Grámatica]]%0a* [[Gramática/Verbos]]%0a* [[Gramática/Oraciones]]%0a* [[Gramática/PoryPara | Por y Para]]%0a* [[Gramática/SeryEstar | Ser y Estar]]%0a%0a%25sidehead%25 [[Vocabulario/Vocabulario | El Vocabulario]]%0a* [[Vocabulario/Lugares | Los Lugares]]%0a* [[Vocabulario/Lenguas | Las Lenguas]]%0a* [[Vocabulario/Calendario | El Calendario]]%0a* [[Vocabulario/Otros | Los otros]]%0a%0a----%0a%0a* [[Rescursos | Rescursos]]%0a%0a%25right%25 [-[[Site.SideBar?action=edit | edit SideBar]]-]
-time=1657752547
+rev=20
+targets=Gramática.Gramática,Gramática.Verbos,Gramática.Oraciones,Gramática.PoryPara,Gramática.SeryEstar,Gramática.Artículos,Vocabulario.Vocabulario,Vocabulario.Lugares,Vocabulario.Lenguas,Vocabulario.Calendario,Vocabulario.Otros,Site.Rescursos,Site.SideBar
+text=%25sidehead%25 [[Gramática/Gramática | La Grámatica]]%0a* [[Gramática/Verbos]]%0a* [[Gramática/Oraciones]]%0a* [[Gramática/PoryPara | Por y Para]]%0a* [[Gramática/SeryEstar | Ser y Estar]]%0a* [[Gramática/Artículos | Los Artículos]]%0a%0a%25sidehead%25 [[Vocabulario/Vocabulario | El Vocabulario]]%0a* [[Vocabulario/Lugares | Los Lugares]]%0a* [[Vocabulario/Lenguas | Las Lenguas]]%0a* [[Vocabulario/Calendario | El Calendario]]%0a* [[Vocabulario/Otros | Los otros]]%0a%0a----%0a%0a* [[Rescursos | Rescursos]]%0a%0a%25right%25 [-[[Site.SideBar?action=edit | edit SideBar]]-]
+time=1666138188
+author:1666138188=the_author
+diff:1666138188:1657752547:=6d5%0a%3c * [[Gramática/Artículos | Los Artículos]]%0a
+host:1666138188=127.0.0.1
 author:1657752547=the_author
 diff:1657752547:1657752533:=13c13%0a%3c ----%0a---%0a> --%0a
 host:1657752547=127.0.0.1

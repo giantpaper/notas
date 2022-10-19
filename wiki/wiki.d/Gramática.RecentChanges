@@ -1,9 +1,9 @@
 version=pmwiki-2.3.4 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:102.0) Gecko/20100101 Firefox/102.0
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0
 charset=UTF-8
 ctime=1608179563
 host=127.0.0.1
 name=Gramática.RecentChanges
-rev=7
-text=* [[Gramática/Oraciones]]  . . . @2022-07-14T00:03:24Z by [[~the_author]]: [==]%0a* [[Gramática/Gramática]]  . . . December 16, 2020, at 08:34 PM PST by [[~the_author]]: [==]%0a
-time=1657757004
+rev=8
+text=* [[Gramática/Artículos]]  . . . @2022-10-19T00:09:15Z by [[~the_author]]: [==]%0a* [[Gramática/Oraciones]]  . . . @2022-07-14T00:03:24Z by [[~the_author]]: [==]%0a* [[Gramática/Gramática]]  . . . December 16, 2020, at 08:34 PM PST by [[~the_author]]: [==]%0a
+time=1666138155
