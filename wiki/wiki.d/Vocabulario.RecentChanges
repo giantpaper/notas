@@ -1,9 +1,9 @@
 version=pmwiki-2.3.4 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:103.0) Gecko/20100101 Firefox/103.0
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0
 charset=UTF-8
 ctime=1608176295
 host=127.0.0.1
 name=Vocabulario.RecentChanges
-rev=30
-text=* [[Vocabulario/Vocabulario]]  . . . @2022-08-01T01:14:49Z by [[~the_author]]: [==]%0a* [[Vocabulario/Otros]]  . . . December 17, 2020, at 05:30 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Lengua]]  . . . December 17, 2020, at 12:40 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Lugares]]  . . . December 17, 2020, at 12:13 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Lenguas]]  . . . December 17, 2020, at 12:12 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Calendario]]  . . . December 17, 2020, at 11:07 AM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Paises]]  . . . December 16, 2020, at 07:38 PM PST by [[~the_author]]: [==]%0a
-time=1659316489
+rev=31
+text=* [[Vocabulario/Vocabulario]]  . . . @2022-10-19T01:08:09Z by [[~the_author]]: [==]%0a* [[Vocabulario/Otros]]  . . . December 17, 2020, at 05:30 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Lengua]]  . . . December 17, 2020, at 12:40 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Lugares]]  . . . December 17, 2020, at 12:13 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Lenguas]]  . . . December 17, 2020, at 12:12 PM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Calendario]]  . . . December 17, 2020, at 11:07 AM PST by [[~the_author]]: [==]%0a* [[Vocabulario/Paises]]  . . . December 16, 2020, at 07:38 PM PST by [[~the_author]]: [==]%0a
+time=1666141689
