@@ -1,16 +1,19 @@
-version=pmwiki-2.2.134 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:84.0) Gecko/20100101 Firefox/84.0
+version=pmwiki-2.3.4 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0
 author=the_author
 charset=UTF-8
 csum=
 ctime=1608160817
 host=127.0.0.1
 name=Gramática.SeryEstar
-rev=8
+rev=9
 targets=
-text=(:title Ser y Estar:)%0a%0a!! Use Ser For:%0a%0a||D	||Description%0a||O	||Occupation%0a||C	||Characteristics%0a||T	||Time%0a||O	||Origin%0a||R	||Relationship%0a%0a!! Use Estar For:%0a%0a||P	||Position%0a||L	||Location%0a||A	||Action%0a||C	||Condition%0a||E	||Emotion%0a%0aSource: http://www.spanishdict.com/guide/ser-vs-estar%0a%0a!! Examples With "Ser"%0a%0a!!! '''Soy''' ingeniera.%0aI am an engineer.%0a* used for an occupation%0a%0a!!! Las fresas '''son''' rojas.%0aThe strawberries are red.%0a* used for a description%0a%0a!!! Él '''es''' de Ingleterra.%0aHe is from England.%0a%0a!!! Ella '''es''' mi prima.%0aShe is my cousin.%0a%0a!! Examples With "Estar"%0a%0a!!! Mi casa '''está''' en la ciudad.%0aMy house is in the city.%0a* used for location%0a%0a!!! '''Estoy''' felíz.%0aI am happy.%0a* used for a condition%0a%0a!!! Ella '''está''' esperando.%0aShe is waiting.%0a* used for an action%0a%0a!!! Ella '''está''' muerta.%0aShe is dead.%0a* used for a condition
-time=1608181379
+text=(:title Ser y Estar:)%0a%0a!! Use Ser For:%0a%0a||D	||Description%0a||O	||Occupation%0a||C	||Characteristics%0a||T	||Time%0a||O	||Origin%0a||R	||Relationship%0a%0a!! Use Estar For:%0a%0a||P	||Position%0a||L	||Location%0a||A	||Action%0a||C	||Condition%0a||E	||Emotion%0a%0aSource: http://www.spanishdict.com/guide/ser-vs-estar%0a%0a!! Examples With "Ser"%0a%0a!!! '''Soy''' ingeniera.%0aI am an engineer.%0a* used for an occupation%0a%0a!!! Las fresas '''son''' rojas.%0aThe strawberries are red.%0a* used for a description%0a%0a!!! Él '''es''' de Ingleterra.%0aHe is from England.%0a* used for an origin%0a%0a!!! Ella '''es''' mi prima.%0aShe is my cousin.%0a* used for a relationship%0a%0a!! Examples With "Estar"%0a%0a!!! Mi casa '''está''' en la ciudad.%0aMy house is in the city.%0a* used for location%0a%0a!!! '''Estoy''' felíz.%0aI am happy.%0a* used for a condition%0a%0a!!! Ella '''está''' esperando.%0aShe is waiting.%0a* used for an action%0a%0a!!! Ella '''está''' muerta.%0aShe is dead.%0a* used for a condition
+time=1666225135
 title=Ser y Estar
+author:1666225135=the_author
+diff:1666225135:1608181379:=34,35c34%0a%3c * used for an origin%0a%3c %0a---%0a> %0a38d36%0a%3c * used for a relationship%0a
+host:1666225135=127.0.0.1
 author:1608161657=the_author
 diff:1608161657:1608161258:=24c24%0a%3c !!! '''Soy''' ingeniera.%0a---%0a> !! '''Soy''' ingeniera.%0a28c28%0a%3c !!! Las fresas '''son''' rojas.%0a---%0a> !! Las fresas '''son''' rojas.%0a32c32%0a%3c !!! Él '''es''' de Ingleterra.%0a---%0a> !! Él '''es''' de Ingleterra.%0a35c35%0a%3c !!! Ella '''es''' mi prima.%0a---%0a> !! Ella '''es''' mi prima.%0a40c40%0a%3c !!! Mi casa '''está''' en la ciudad.%0a---%0a> !! Mi casa '''está''' en la ciudad.%0a44c44%0a%3c !!! '''Estoy''' felíz.%0a---%0a> !! '''Estoy''' felíz.%0a48c48%0a%3c !!! Ella '''está''' esperando.%0a---%0a> !! Ella '''está''' esperando.%0a52c52%0a%3c !!! Ella '''está''' muerta.%0a---%0a> !! Ella '''está''' muerta.%0a
 host:1608161657=127.0.0.1
